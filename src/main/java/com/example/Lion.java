@@ -18,6 +18,12 @@ public class Lion extends Feline {
         }
     }
 
+    // всегда самец
+    public Lion(Feline feline) {
+        this.feline = feline;
+        hasMane = true;
+    }
+
     @Override
     public int getKittens() {
         return feline.getKittens();
