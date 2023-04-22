@@ -29,7 +29,6 @@ public class LionTest {
     @Test
     // проверили, что метод getFood() возвращает список "Животные", "Птицы", "Рыба"
     public void checkGetFood() throws Exception {
-        lionMale.getFood();
         List<String> expectedList = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(mockFeline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actualList = mockFeline.getFood("Хищник");
